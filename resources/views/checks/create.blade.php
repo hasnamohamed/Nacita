@@ -122,54 +122,54 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>إكصدامات أمامي وخلفي</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td>إكصدامات أمامي وخلفي </td>
+                    <td><input type="checkbox" name="front_back_bumpers_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="front_back_bumpers_unfit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="front_back_bumpers_note"></td>
                     <td>مرايات جاننبية</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="side_mirror_fit" value="سليم"></td>
+                    <td><input type="checkbox"  name="side_mirror_unfit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input"  name="side_mirror_note"></td>
                 </tr>
                 <tr>
                     <td>كبوت</td>
-                    <td><input type="checkbox" name="mirrors_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="mirrors_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="mirrors_notes"></td>
+                    <td><input type="checkbox" name="hood_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="hood_unfit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="hood_note"></td>
                     <td>ميكانزم المريات</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="mirror_mechanism_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="mirror_mechanism_unfit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="mirror_mechanism_note"></td>
                 </tr>
                 <tr>
                     <td>سقف</td>
-                    <td><input type="checkbox" name="engine_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="engine_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="engine_notes"></td>
+                    <td><input type="checkbox" name="roof_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="roof_unfit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="roof_note"></td>
                     <td>زجاج أمامي وخلفي وأبواب</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="front_back_doors_mirror_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="front_back_doors_mirror_unfit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="front_back_doors_mirror_note"></td>
                 </tr>
                 <tr>
                     <td>رفارف</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
+                    <td><input type="checkbox" name="fenders_fit" value="1"></td>
+                    <td><input type="checkbox" name="fenders_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="fenders_note"></td>
                     <td>سنتر لوك / إنذار</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="alert_fit" value="1"></td>
+                    <td><input type="checkbox" name="alert_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="alert_note"></td>
                 </tr>
                 <tr>
                     <td>أبواب</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
+                    <td><input type="checkbox" name="doors_fit" value="1"></td>
+                    <td><input type="checkbox" name="doors_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="doors_note"></td>
                     <td>مراوح التبريد والبلاور</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="cooling_fans_blowers_fit" value="1"></td>
+                    <td><input type="checkbox" name="cooling_fans_blowers_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="cooling_fans_blowers_note"></td>
                 </tr>
                 <tr>
                     <td>كوالين ابواب وشنطة</td>
@@ -177,59 +177,59 @@
                     <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
                     <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
                     <td> علبة الفيوزات</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="door_trunk_locks_fit" value="1"></td>
+                    <td><input type="checkbox" name="door_trunk_locks_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="door_trunk_locks_note"></td>
                 </tr>
                 <tr>
                     <td>شنطة</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
+                    <td><input type="checkbox" name="bag_fit" value="1"></td>
+                    <td><input type="checkbox" name="bag_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="bag_note"></td>
                     <td> إطار أمامي شمال (حالة النقشة - تاريخ الإنتاج - حالة الجنط)</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="front_tire_north_fit" value="1"></td>
+                    <td><input type="checkbox" name="front_tire_north_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="front_tire_north_note"></td>
                 </tr>
                 <tr>
                     <td>عتب</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
+                    <td><input type="checkbox" name="reproach_fit" value="1"></td>
+                    <td><input type="checkbox" name="reproach_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="reproach_note"></td>
                     <td> إطار أمامي يمين (حالة النقشة - تاريخ الإنتاج - حالة الجنط)</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="front_tire_right_fit" value="1"></td>
+                    <td><input type="checkbox" name="front_tire_right_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="front_tire_right_note"></td>
                 </tr>
                 <tr>
                     <td>دهانات (دوكو ظاهرى)</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
+                    <td><input type="checkbox" name="paints_fit" value="1"></td>
+                    <td><input type="checkbox" name="paints_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="paints_note"></td>
                     <td> إطار خلفي شمال (حالة النقشة - تاريخ الإنتاج - حالة الجنط)</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="back_tire_north_fit" value="1"></td>
+                    <td><input type="checkbox" name="back_tire_north_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="back_tire_north_note"></td>
                 </tr>
                 <tr>
                     <td>فوانيس أمامي وخلفي وإشارة</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
+                    <td><input type="checkbox" name="front_back_lights_signal_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="front_back_lights_signal_fit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="front_back_lights_signal_note"></td>
                     <td> إطار خلفي يمين (حالة النقشة - تاريخ الإنتاج - حالة الجنط)</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="back_tire_right_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="back_tire_right_fit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="back_tire_right_note"></td>
                 </tr>
                 <tr>
                     <td>إضاءة خارجية</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
+                    <td><input type="checkbox" name="outdoor_lighting_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="outdoor_lighting_fit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="outdoor_lighting_note"></td>
                     <td> إطار إستبن (حالة النقشة - تاريخ الإنتاج - حالة الجنط)</td>
-                    <td><input type="checkbox" name="tires_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="tires_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="tires_notes"></td>
+                    <td><input type="checkbox" name="spare_tire_fit" value="سليم"></td>
+                    <td><input type="checkbox" name="spare_tire_fit" value="غير سليم"></td>
+                    <td><input type="text" class="form-control inspection-input" name="spare_tire_note"></td>
                 </tr>
                 </tbody>
             </table>
