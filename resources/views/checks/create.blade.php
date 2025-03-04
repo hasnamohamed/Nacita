@@ -25,7 +25,7 @@
     إنشاء نموذج فحص السيارة
 @endsection
 @section('content')
-    <form>
+    <form method="post" action="{{ route('checks.store') }}">
         <div class="container my-2 inspection-form">
             <h5 class="text-center">نموذج فحص السيارة - ناسيتا أوتو كير</h5>
             <br>

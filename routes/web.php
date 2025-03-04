@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 use App\Http\Controllers\CheckController;
 
-Route::get('/checks/create', [CheckController::class, 'create']);
+Route::resource('checks', CheckController::class);
