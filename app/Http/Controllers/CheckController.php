@@ -12,7 +12,7 @@ class CheckController extends Controller
     }
     public function store()
     {
-        return view('checks.create');
+        dd('here');
     }
     public function edit()
     {
@@ -26,7 +26,7 @@ class CheckController extends Controller
     {
         return view('checks.create');
     }
-    public function delete()
+    public function destroy()
     {
         return view('checks.create');
     }

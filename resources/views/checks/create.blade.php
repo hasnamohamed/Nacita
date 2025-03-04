@@ -26,6 +26,7 @@
 @endsection
 @section('content')
     <form method="post" action="{{ route('checks.store') }}">
+        @csrf
         <div class="container my-2 inspection-form">
             <h5 class="text-center">نموذج فحص السيارة - ناسيتا أوتو كير</h5>
             <br>
