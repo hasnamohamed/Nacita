@@ -120,7 +120,7 @@ class CheckController extends Controller
     public function show($check)
     {
         $check = Check::find($check);
-        $check_info = Check_information::find(['check_id' => $check->id]);
+        $check_info = Check_information::where('check_id', $check->id)->get();
         return view('checks.show', ['check' => $check, 'check_info' => $check_info]);
     }
     public function destroy($check)
