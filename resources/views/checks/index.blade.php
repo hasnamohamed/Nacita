@@ -37,7 +37,7 @@
                 <td>{{ $check->date }}</td>
                 <td>{{ $check->supervisor_name }}</td>
                 <td>{{ $check->manufacturing_year }}</td>
-                <td>الفئة</td>
+                <td>{{ $check->category }}</td>
                 <td>{{ $check->branch }}</td>
                 <td>{{ $check->customer_name }}</td>
                 <td>{{ $check->vehicle_number }}</td>
