@@ -117,13 +117,16 @@ class CheckController extends Controller
     {
         return view('checks.create');
     }
-    public function show()
+    public function show($check)
     {
-        return view('checks.create');
+        $check = Check::find($check);
+        $check_info = Check_information::find(['check_id' => $check->id]);
+        return view('checks.show', ['check' => $check, 'check_info' => $check_info]);
     }
     public function destroy($check)
     {
         $check = Check::find($check);
+
         $check->delete();
         return to_route('checks.index');
     }
