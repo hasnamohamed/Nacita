@@ -121,8 +121,10 @@ class CheckController extends Controller
     {
         return view('checks.create');
     }
-    public function destroy()
+    public function destroy($check)
     {
-        return view('checks.create');
+        $check = Check::find($check);
+        $check->delete();
+        return to_route('checks.index');
     }
 }

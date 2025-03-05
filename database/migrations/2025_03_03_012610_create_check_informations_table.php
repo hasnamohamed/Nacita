@@ -16,7 +16,11 @@ return new class extends Migration
         Schema::create('check_informations', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('check_id');
-            $table->foreign('check_id')->references('id')->on('checks');
+            $table->foreign('check_id')
+                ->references('id')
+                ->on('checks')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             $table->string('item');
             $table->boolean('fit');
             $table->boolean('unfit');
