@@ -33,7 +33,7 @@
             <div class="row mb-1">
                 <div class="col-3">
                     <label>التاريخ</label>
-                    <input type="date" class="form-control inspection-input" name="inspection_date">
+                    <input type="date" class="form-control inspection-input" name="date">
                 </div>
                 <div class="col-3">
                     <label>الفرع</label>
@@ -41,11 +41,11 @@
                 </div>
                 <div class="col-3">
                     <label>ساعة الدخول</label>
-                    <input type="time" class="form-control inspection-input" name="entry_time">
+                    <input type="time" class="form-control inspection-input" name="entrance">
                 </div>
                 <div class="col-3">
                     <label>ساعة الخروج</label>
-                    <input type="time" class="form-control inspection-input" name="exit_time">
+                    <input type="time" class="form-control inspection-input" name="exit">
                 </div>
             </div>
             <div class="row mb-1">
@@ -59,35 +59,35 @@
                 </div>
                 <div class="col-3">
                     <label>التليفون</label>
-                    <input type="text" class="form-control inspection-input" name="phone">
+                    <input type="text" class="form-control inspection-input" name="phone_no">
                 </div>
                 <div class="col-3">
                     <label>نوع وموديل السيارة</label>
-                    <input type="text" class="form-control inspection-input" name="vehicle_model">
+                    <input type="text" class="form-control inspection-input" name="vehicle_model_and_type">
                 </div>
             </div>
             <div class="row mb-1">
                 <div class="col-3">
                     <label>سنة الصنع</label>
-                    <input type="text" class="form-control inspection-input" name="manufacturing_year">
+                    <input type="number" class="form-control inspection-input" name="manufacturing_year">
                 </div>
                 <div class="col-3">
                     <label>رقم السيارة</label>
-                    <input type="text" class="form-control inspection-input" name="plate_number">
+                    <input type="text" class="form-control inspection-input" name="vehicle_number">
                 </div>
                 <div class="col-3">
                     <label>الكيلومترات</label>
-                    <input type="text" class="form-control inspection-input" name="odometer">
+                    <input type="text" class="form-control inspection-input" name="kilometers">
                 </div>
                 <div class="col-3">
                     <label>رقم الشاسيه</label>
-                    <input type="text" class="form-control inspection-input" name="chassis_number">
+                    <input type="number" class="form-control inspection-input" name="chassis_no">
                 </div>
             </div>
             <div class="row mb-1">
                 <div class="col-3">
                     <label>رقم الموتور</label>
-                    <input type="text" class="form-control inspection-input" name="engine_number">
+                    <input type="number" class="form-control inspection-input" name="engine_no">
                 </div>
                 <div class="col-3">
                     <label>لون السيارة</label>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="col-3">
                     <label>السعة CC</label>
-                    <input type="text" class="form-control inspection-input" name="engine_capacity">
+                    <input type="text" class="form-control inspection-input" name="cc_capacity">
                 </div>
                 <div class="col-3">
                     <label>ناقل الحركة</label>
@@ -124,32 +124,32 @@
                 <tbody>
                 <tr>
                     <td>إكصدامات أمامي وخلفي </td>
-                    <td><input type="checkbox" name="front_back_bumpers_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="front_back_bumpers_unfit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="front_back_bumpers_fit" value="1"></td>
+                    <td><input type="checkbox" name="front_back_bumpers_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="front_back_bumpers_note"></td>
                     <td>مرايات جاننبية</td>
-                    <td><input type="checkbox" name="side_mirror_fit" value="سليم"></td>
-                    <td><input type="checkbox"  name="side_mirror_unfit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="side_mirror_fit" value="1"></td>
+                    <td><input type="checkbox"  name="side_mirror_unfit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input"  name="side_mirror_note"></td>
                 </tr>
                 <tr>
                     <td>كبوت</td>
-                    <td><input type="checkbox" name="hood_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="hood_unfit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="hood_fit" value="1"></td>
+                    <td><input type="checkbox" name="hood_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="hood_note"></td>
                     <td>ميكانزم المريات</td>
-                    <td><input type="checkbox" name="mirror_mechanism_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="mirror_mechanism_unfit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="mirror_mechanism_fit" value="1"></td>
+                    <td><input type="checkbox" name="mirror_mechanism_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="mirror_mechanism_note"></td>
                 </tr>
                 <tr>
                     <td>سقف</td>
-                    <td><input type="checkbox" name="roof_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="roof_unfit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="roof_fit" value="1"></td>
+                    <td><input type="checkbox" name="roof_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="roof_note"></td>
                     <td>زجاج أمامي وخلفي وأبواب</td>
-                    <td><input type="checkbox" name="front_back_doors_mirror_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="front_back_doors_mirror_unfit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="front_back_doors_mirror_fit" value="1"></td>
+                    <td><input type="checkbox" name="front_back_doors_mirror_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="front_back_doors_mirror_note"></td>
                 </tr>
                 <tr>
@@ -174,10 +174,10 @@
                 </tr>
                 <tr>
                     <td>كوالين ابواب وشنطة</td>
-                    <td><input type="checkbox" name="brakes_condition" value="سليم"></td>
-                    <td><input type="checkbox" name="brakes_condition" value="غير سليم"></td>
-                    <td><input type="text" class="form-control inspection-input" name="brakes_notes"></td>
-                    <td> علبة الفيوزات</td>
+                    <td><input type="checkbox" name="brakes_condition_fit" value="1"></td>
+                    <td><input type="checkbox" name="brakes_condition_fit" value="0"></td>
+                    <td><input type="text" class="form-control inspection-input" name="brakes_condition_note"></td>
+                    <td>علبة الفيوزات </td>
                     <td><input type="checkbox" name="door_trunk_locks_fit" value="1"></td>
                     <td><input type="checkbox" name="door_trunk_locks_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="door_trunk_locks_note"></td>
@@ -214,22 +214,22 @@
                 </tr>
                 <tr>
                     <td>فوانيس أمامي وخلفي وإشارة</td>
-                    <td><input type="checkbox" name="front_back_lights_signal_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="front_back_lights_signal_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="front_back_lights_signal_fit" value="1"></td>
+                    <td><input type="checkbox" name="front_back_lights_signal_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="front_back_lights_signal_note"></td>
                     <td> إطار خلفي يمين (حالة النقشة - تاريخ الإنتاج - حالة الجنط)</td>
-                    <td><input type="checkbox" name="back_tire_right_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="back_tire_right_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="back_tire_right_fit" value="1"></td>
+                    <td><input type="checkbox" name="back_tire_right_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="back_tire_right_note"></td>
                 </tr>
                 <tr>
                     <td>إضاءة خارجية</td>
-                    <td><input type="checkbox" name="outdoor_lighting_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="outdoor_lighting_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="outdoor_lighting_fit" value="1"></td>
+                    <td><input type="checkbox" name="outdoor_lighting_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="outdoor_lighting_note"></td>
                     <td> إطار إستبن (حالة النقشة - تاريخ الإنتاج - حالة الجنط)</td>
-                    <td><input type="checkbox" name="spare_tire_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="spare_tire_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="spare_tire_fit" value="1"></td>
+                    <td><input type="checkbox" name="spare_tire_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="spare_tire_note"></td>
                 </tr>
                 </tbody>
@@ -253,55 +253,55 @@
                 <tbody>
                 <tr>
                     <td>زيوت / سوائل</td>
-                    <td><input type="checkbox" name="oils_liquids_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="oils_liquids_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="oils_liquids_fit" value="1"></td>
+                    <td><input type="checkbox" name="oils_liquids_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="oils_liquids_note"
                                value="يلزم التغيير في الصيانة الدورية"></td>
                     <td> تيل + ديسكات فرامل أمامي وخلفي</td>
-                    <td><input type="checkbox" name="front_back_brake_pads_and_discs_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="front_back_brake_pads_and_discs_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="front_back_brake_pads_and_discs_fit" value="1"></td>
+                    <td><input type="checkbox" name="front_back_brake_pads_and_discs_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="front_back_brake_pads_and_discs_note"></td>
                 </tr>
                 <tr>
                     <td>بوجيهات</td>
-                    <td><input type="checkbox" name="spark_plugs_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="spark_plugs_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="spark_plugs_fit" value="1"></td>
+                    <td><input type="checkbox" name="spark_plugs_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="spark_plugs_note"
                                value="يلزم التغيير في الصيانة الدورية"></td>
                     <td>مستوي فرامل اليد</td>
-                    <td><input type="checkbox" name="handbrake_level_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="handbrake_level_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="handbrake_level_fit" value="1"></td>
+                    <td><input type="checkbox" name="handbrake_level_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="handbrake_level_note"></td>
                 </tr>
                 <tr>
                     <td>سيور</td>
-                    <td><input type="checkbox" name="belts_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="belts_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="belts_fit" value="1"></td>
+                    <td><input type="checkbox" name="belts_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="belts_note"
                                value="يلزم التغيير في الصيانة الدورية"></td>
                     <td>عفشة</td>
-                    <td><input type="checkbox" name="furniture_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="furniture_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="furniture_fit" value="1"></td>
+                    <td><input type="checkbox" name="furniture_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="furniture_note"></td>
                 </tr>
                 <tr>
                     <td>فلتر هواء / تكييف</td>
-                    <td><input type="checkbox" name="air_filter_and_conditioning_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="air_filter_and_conditioning_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="air_filter_and_conditioning_fit" value="1"></td>
+                    <td><input type="checkbox" name="air_filter_and_conditioning_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="air_filter_and_conditioning_note"></td>
                     <td>قواعد محرك</td>
-                    <td><input type="checkbox" name="engine_rules_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="engine_rules_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="engine_rules_fit" value="1"></td>
+                    <td><input type="checkbox" name="engine_rules_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="engine_rules_note"></td>
                 </tr>
                 <tr>
                     <td>شكمان</td>
-                    <td><input type="checkbox" name="muffler_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="muffler_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="muffler_fit" value="1"></td>
+                    <td><input type="checkbox" name="muffler_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="muffler_note"></td>
                     <td>شاسيه ( ظاهرى)</td>
-                    <td><input type="checkbox" name="apparent_chassis_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="apparent_chassis_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="apparent_chassis_fit" value="1"></td>
+                    <td><input type="checkbox" name="apparent_chassis_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="apparent_chassis_note"></td>
                 </tr>
                 </tbody>
@@ -325,62 +325,62 @@
                 <tbody>
                 <tr>
                     <td>فرش</td>
-                    <td><input type="checkbox" name="furnishing_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="furnishing_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="furnishing_fit" value="1"></td>
+                    <td><input type="checkbox" name="furnishing_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="furnishing_note"></td>
                     <td> التكييف</td>
-                    <td><input type="checkbox" name="air_conditioning_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="air_conditioning_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="air_conditioning_fit" value="1"></td>
+                    <td><input type="checkbox" name="air_conditioning_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="air_conditioning_note"></td>
                 </tr>
                 <tr>
                     <td>تابلوه</td>
-                    <td><input type="checkbox" name="tableau_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="tableau_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="tableau_fit" value="1"></td>
+                    <td><input type="checkbox" name="tableau_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="tableau_note"></td>
                     <td>الولاعة</td>
-                    <td><input type="checkbox" name="lighter_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="lighter_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="lighter_fit" value="1"></td>
+                    <td><input type="checkbox" name="lighter_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="lighter_note"></td>
                 </tr>
                 <tr>
                     <td>لمبات إنذار بلوحة العدادات</td>
-                    <td><input type="checkbox" name="dashboard_warning_lights_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="dashboard_warning_lights_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="dashboard_warning_lights_fit" value="1"></td>
+                    <td><input type="checkbox" name="dashboard_warning_lights_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="dashboard_warning_lights_note"></td>
                     <td>إنفجار الإيرباج</td>
-                    <td><input type="checkbox" name="airbag_explosion_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="airbag_explosion_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="airbag_explosion_fit" value="1"></td>
+                    <td><input type="checkbox" name="airbag_explosion_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="airbag_explosion_note"></td>
                 </tr>
                 <tr>
                     <td>عدادات</td>
-                    <td><input type="checkbox" name="counters_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="counters_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="counters_fit" value="1"></td>
+                    <td><input type="checkbox" name="counters_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="counters_note"></td>
                     <td>فرش السقف</td>
-                    <td><input type="checkbox" name="ceiling_furnishing_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="ceiling_furnishing_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="ceiling_furnishing_fit" value="1"></td>
+                    <td><input type="checkbox" name="ceiling_furnishing_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="ceiling_furnishing_note"></td>
                 </tr>
                 <tr>
                     <td>كاسيت وسماعات</td>
-                    <td><input type="checkbox" name="cassette_headphones_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="cassette_headphones_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="cassette_headphones_fit" value="1"></td>
+                    <td><input type="checkbox" name="cassette_headphones_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="cassette_headphones_note"></td>
                     <td>فتحة سقف</td>
-                    <td><input type="checkbox" name="sunroof_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="sunroof_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="sunroof_fit" value="1"></td>
+                    <td><input type="checkbox" name="sunroof_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="sunroof_note"></td>
                 </tr>
                 <tr>
                     <td>إضاءة داخلية</td>
-                    <td><input type="checkbox" name="interior_lighting_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="interior_lighting_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="interior_lighting_fit" value="1"></td>
+                    <td><input type="checkbox" name="interior_lighting_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="interior_lighting_note"></td>
                     <td>زجاج كهرباء</td>
-                    <td><input type="checkbox" name="electric_glass_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="electric_glass_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="electric_glass_fit" value="1"></td>
+                    <td><input type="checkbox" name="electric_glass_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="electric_glass_note"></td>
                 </tr>
                 </tbody>
@@ -405,22 +405,22 @@
                 <tbody>
                 <tr>
                     <td>تكييف</td>
-                    <td><input type="checkbox" name="auto_air_conditioning_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="auto_air_conditioning_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="auto_air_conditioning_fit" value="1"></td>
+                    <td><input type="checkbox" name="auto_air_conditioning_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="auto_air_conditioning_note"></td>
                     <td>كبس موتور (Bar)</td>
-                    <td><input type="checkbox" name="motor_press_bar_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="motor_press_bar_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="motor_press_bar_fit" value="1"></td>
+                    <td><input type="checkbox" name="motor_press_bar_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="motor_press_bar_note"></td>
                 </tr>
                 <tr>
                     <td>بطارية + دينامو</td>
-                    <td><input type="checkbox" name="battery_dynamo_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="battery_dynamo_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="battery_dynamo_fit" value="1"></td>
+                    <td><input type="checkbox" name="battery_dynamo_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="battery_dynamo_note"></td>
                     <td>الزوايا ( مرفق تقرير الجهاز )</td>
-                    <td><input type="checkbox" name="angles_fit" value="سليم"></td>
-                    <td><input type="checkbox" name="angles_fit" value="غير سليم"></td>
+                    <td><input type="checkbox" name="angles_fit" value="1"></td>
+                    <td><input type="checkbox" name="angles_fit" value="0"></td>
                     <td><input type="text" class="form-control inspection-input" name="angles_note"></td>
                 </tr>
                 </tbody>

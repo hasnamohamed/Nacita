@@ -22,12 +22,12 @@ return new class extends Migration
             $table->string('supervisor_name');
             $table->string('customer_name');
             $table->string('phone_no');
-            $table->string('car_model_and_type');
-            $table->string('manufacture_year');
-            $table->string('car_number');
-            $table->integer('kilometers');
-            $table->string('chassis_no');
-            $table->string('engine_no');
+            $table->string('vehicle_model_and_type');
+            $table->string('manufacturing_year');
+            $table->string('vehicle_number');
+            $table->string('kilometers');
+            $table->integer('chassis_no');
+            $table->integer('engine_no');
             $table->string('car_color');
             $table->string('cc_capacity');
             $table->string('transmission');
