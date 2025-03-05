@@ -106,7 +106,7 @@ class CheckController extends Controller
             $check_information->note = $request[$item_information[1] . '_note'];
             $check_information->save();
         }
-        return new JsonResponse('saved');
+        return to_route('checks.index');
 
     }
     public function edit()
