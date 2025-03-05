@@ -447,6 +447,7 @@
             <textarea class="form-control" name="additional_notes" rows="3"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary w-100">Submit Inspection</button>
+        <button type="submit" class="btn btn-primary">إنشاء </button>
+        <a href="{{ route('checks.index') }}" type="submit" class="btn btn-danger">إالغاء </a>
     </form>
 @endsection
