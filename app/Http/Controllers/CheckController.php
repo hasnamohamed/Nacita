@@ -59,6 +59,11 @@ class CheckController extends Controller
         ['بطارية + دينامو', 'battery_dynamo'],
         ['الزوايا ( مرفق تقرير الجهاز )', 'angles'],
     ];
+    public function index()
+    {
+        $checks = Check::get();
+        return view('checks.index', ['checks' => $checks]);
+    }
     public function create()
     {
         return view('checks.create');
@@ -69,6 +74,7 @@ class CheckController extends Controller
         $check->date = $request['date'];
         $check->branch = $request['branch'];
         $check->entrance = $request['entrance'];
+        $check->category =  $request['category'];
         $check->exit = $request['exit'];
         $check->supervisor_name = $request['supervisor_name'];
         $check->customer_name = $request['customer_name'];

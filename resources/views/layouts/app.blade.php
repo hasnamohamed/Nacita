@@ -13,6 +13,23 @@
     <title> @yield('title') </title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">CARS</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ route('checks.index') }}">كل الفحوصات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('checks.create') }}">انشاء فحص جديد</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="container">
     <h2>@yield('headTitle')</h2>
     @yield('content')
