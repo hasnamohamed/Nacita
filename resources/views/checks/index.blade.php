@@ -52,9 +52,9 @@
                 <td>{{ $check->transmission }}</td>
                 <td>{{ $check->engine_no }}</td>
                 <td>
-                    <a>Edit</a>
-                    <a>show</a>
-                    <a>Delete</a>
+                    <a class="text text-warning mb-1"  href="{{ route('checks.edit',['check'=> $check->id]) }}">تعديل</a>
+                    <a class="text text-primary mb-1" href="{{ route('checks.show',['check'=> $check->id]) }}">عرض</a>
+                    <a class="text text-danger" href="{{ route('checks.destroy',['check'=> $check->id]) }}">حذف</a>
                 </td>
             </tr>
         @endforeach

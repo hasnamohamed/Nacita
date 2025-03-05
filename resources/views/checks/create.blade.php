@@ -28,7 +28,7 @@
     <form method="post" action="{{ route('checks.store') }}">
         @csrf
         <div class="container my-2 inspection-form">
-            <h5 class="text-center">نموذج فحص السيارة - ناسيتا أوتو كير</h5>
+            <h5 class="text-center">نموذج فحص السيارة </h5>
             <br>
             <div class="row mb-1">
                 <div class="col-3">
