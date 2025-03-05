@@ -139,19 +139,19 @@ All Checks
                 </thead>
                 <tbody>
                 @php
-                    $counter = 22; // Start from 22 to continue from previous loop
+                    $counter = 22;
                 @endphp
 
                 @foreach($check_info as $index => $check_information)
                     @if($counter == 32)
-                        @break {{-- Stop the loop when counter reaches 32 --}}
+                        @break
                     @endif
                     @if($index < 22)
-                        @continue {{-- Skip the first 22 elements --}}
+                        @continue
                     @endif
 
                     @if(($counter - 22) % 2 == 0)
-                        <tr> {{-- Start a new row every two records --}}
+                        <tr>
                             @endif
 
                             <td>{{ $check_information->item }}</td>
@@ -195,19 +195,19 @@ All Checks
                 </thead>
                 <tbody>
                 @php
-                    $counter = 32; // Start from 22 to continue from previous loop
+                    $counter = 32;
                 @endphp
 
                 @foreach($check_info as $index => $check_information)
                     @if($counter == 44)
-                        @break {{-- Stop the loop when counter reaches 32 --}}
+                        @break
                     @endif
                     @if($index < 32)
-                        @continue {{-- Skip the first 22 elements --}}
+                        @continue
                     @endif
 
                     @if(($counter - 32) % 2 == 0)
-                        <tr> {{-- Start a new row every two records --}}
+                        <tr>
                             @endif
 
                             <td>{{ $check_information->item }}</td>
@@ -227,7 +227,7 @@ All Checks
                             @php $counter++; @endphp
 
                             @if(($counter - 32) % 2 == 0 || $counter == 32 || $loop->last)
-                        </tr> {{-- Close the row after two records or if limit reached --}}
+                        </tr>
                     @endif
                 @endforeach
                 </tbody>
@@ -290,7 +290,7 @@ All Checks
             </table>
 
             <br>
-            <h6 class="mt-4 d-inline">حالة السيارة من الخارج </h6>    <small>*فحص الشاسية والدوكو ظاهرى فقط دو أدني
+            <h6 class="mt-4 d-inline">حالة السيارة من الخارج </h6><small>*فحص الشاسية والدوكو ظاهرى فقط دو أدني
                 مسئولية علي الشركة</small>
             <br>
 
