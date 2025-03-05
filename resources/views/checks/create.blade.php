@@ -39,13 +39,22 @@
                     <label>الفرع</label>
                     <input type="text" class="form-control inspection-input" name="branch">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <label>ساعة الدخول</label>
                     <input type="time" class="form-control inspection-input" name="entrance">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <label>ساعة الخروج</label>
                     <input type="time" class="form-control inspection-input" name="exit">
+                </div>
+                <div class="col-2">
+                    <label>الفئة</label>
+                    <select class="form-select inspection-input" name="category">
+                        <option value="sedan">Sedan</option>
+                        <option value="4x4">4x4</option>
+                        <option value="suv">SUV</option>
+                        <option value="hatch_back">Hatch Back</option>
+                    </select>
                 </div>
             </div>
             <div class="row mb-1">
