@@ -115,9 +115,43 @@ class CheckController extends Controller
         $check_info = Check_information::where('check_id', $check->id)->get();
         return view('checks.edit', ['check' => $check, 'check_info' => $check_info]);
     }
-    public function update()
+    public function update(Request $request)
     {
-        return view('checks.create');
+        $check = Check::find($request->check);
+        $check->date = $request['date'];
+        $check->branch = $request['branch'];
+        $check->entrance = $request['entrance'];
+        $check->category =  $request['category'];
+        $check->exit = $request['exit'];
+        $check->supervisor_name = $request['supervisor_name'];
+        $check->customer_name = $request['customer_name'];
+        $check->phone_no = $request['phone_no'];
+        $check->vehicle_model_and_type = $request['vehicle_model_and_type'];
+        $check->manufacturing_year = $request['manufacturing_year'];
+        $check->vehicle_number = $request['vehicle_number'];
+        $check->kilometers = $request['kilometers'];
+        $check->chassis_no = $request['chassis_no'];
+        $check->engine_no = $request['engine_no'];
+        $check->car_color = $request['car_color'];
+        $check->cc_capacity = $request['cc_capacity'];
+        $check->transmission = $request['transmission'];
+        $check->additional_notes = $request['additional_notes'];
+        $check->save();
+        foreach ($this->data as $item_information) {
+            $check_information = Check_information::where('check_id', $request->check)
+                ->where('item', $item_information[0])
+                ->first();
+            if ($request[$item_information[1] . '_fit'] == 1) {
+                $check_information->fit = 1;
+                $check_information->unfit = 0;
+            } else {
+                $check_information->fit = 0;
+                $check_information->unfit = 1;
+            }
+            $check_information->note = $request[$item_information[1] . '_note'];
+            $check_information->save();
+        }
+        return to_route('checks.index');
     }
     public function show($check)
     {

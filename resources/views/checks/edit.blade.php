@@ -25,7 +25,8 @@
     تعديل نموذج فحص السيارة
 @endsection
 @section('content')
-    <form method="post" action="{{ route('checks.store') }}">
+    <form method="post" action="{{ route('checks.update', ['check' => $check->id]) }}">
+        @method('put')
         @csrf
         <div class="container my-2 inspection-form">
             <h5 class="text-center">نموذج فحص السيارة - {{ $check->vehicle_model_and_type }} </h5>
