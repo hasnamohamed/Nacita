@@ -109,9 +109,11 @@ class CheckController extends Controller
         return to_route('checks.index');
 
     }
-    public function edit()
+    public function edit($check)
     {
-        return view('checks.create');
+        $check = Check::find($check);
+        $check_info = Check_information::where('check_id', $check->id)->get();
+        return view('checks.edit', ['check' => $check, 'check_info' => $check_info]);
     }
     public function update()
     {
